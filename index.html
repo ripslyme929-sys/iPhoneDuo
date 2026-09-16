@@ -777,6 +777,9 @@
     const isAnyOpen = Array.from(cards).some(card => card.classList.contains('open'));
     toggleAllBtn.textContent = isAnyOpen ? '全部收合' : '全部展開';
   }
+
+  // Ensure all cards are collapsed on initial load
+  updateToggleAllButton();
 </script>
 
 </body>
